@@ -1,0 +1,35 @@
+version: 2
+
+seeds:
+  - name: procedures
+    config:
+      full_refresh: true
+      column_types:
+        START: timestamp
+        STOP: timestamp
+        PATIENT: text
+        ENCOUNTER: text
+        CODE: text
+        DESCRIPTION: text
+        BASE_COST: numeric
+        REASONCODE: text
+        REASONDESCRIPTION: text
+    columns:
+      - name: START
+        description: "Start date and time of the procedure"
+      - name: STOP
+        description: "Stop date and time of the procedure"
+      - name: PATIENT
+        description: "Patient ID"
+      - name: ENCOUNTER
+        description: "Encounter ID"
+      - name: CODE
+        description: "Procedure code"
+      - name: DESCRIPTION
+        description: "Description of the procedure"
+      - name: BASE_COST
+        description: "Base cost of the procedure"
+      - name: REASONCODE
+        description: "Reason code for the procedure"
+      - name: REASONDESCRIPTION
+        description: "Reason description for the procedure"

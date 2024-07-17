@@ -1,0 +1,47 @@
+version: 2
+
+seeds:
+  - name: imaging_studies
+    config:
+      full_refresh: true
+      column_types:
+        Id: text
+        DATE: timestamp
+        PATIENT: text
+        ENCOUNTER: text
+        SERIES_UID: text
+        BODYSITE_CODE: bigint
+        BODYSITE_DESCRIPTION: text
+        MODALITY_CODE: text
+        MODALITY_DESCRIPTION: text
+        INSTANCE_UID: text
+        SOP_CODE: text
+        SOP_DESCRIPTION: text
+        PROCEDURE_CODE: bigint
+    columns:
+      - name: Id
+        description: "Unique identifier for the imaging study"
+      - name: DATE
+        description: "Date and time of the imaging study"
+      - name: PATIENT
+        description: "Patient ID"
+      - name: ENCOUNTER
+        description: "Encounter ID"
+      - name: SERIES_UID
+        description: "Series Unique Identifier"
+      - name: BODYSITE_CODE
+        description: "Body site code"
+      - name: BODYSITE_DESCRIPTION
+        description: "Body site description"
+      - name: MODALITY_CODE
+        description: "Modality code"
+      - name: MODALITY_DESCRIPTION
+        description: "Modality description"
+      - name: INSTANCE_UID
+        description: "Instance Unique Identifier"
+      - name: SOP_CODE
+        description: "SOP code"
+      - name: SOP_DESCRIPTION
+        description: "SOP description"
+      - name: PROCEDURE_CODE
+        description: "Procedure code"

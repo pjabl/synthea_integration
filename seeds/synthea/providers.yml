@@ -1,0 +1,47 @@
+version: 2
+
+seeds:
+  - name: providers
+    config:
+      full_refresh: true
+      column_types:
+        Id: text
+        ORGANIZATION: text
+        NAME: text
+        GENDER: text
+        SPECIALITY: text
+        ADDRESS: text
+        CITY: text
+        STATE: text
+        ZIP: text
+        LAT: float
+        LON: float
+        ENCOUNTERS: integer
+        PROCEDURES: integer
+    columns:
+      - name: Id
+        description: "Unique identifier for the provider"
+      - name: ORGANIZATION
+        description: "Organization ID"
+      - name: NAME
+        description: "Name of the provider"
+      - name: GENDER
+        description: "Gender of the provider"
+      - name: SPECIALITY
+        description: "Speciality of the provider"
+      - name: ADDRESS
+        description: "Address of the provider"
+      - name: CITY
+        description: "City where the provider is located"
+      - name: STATE
+        description: "State where the provider is located"
+      - name: ZIP
+        description: "ZIP code of the provider"
+      - name: LAT
+        description: "Latitude coordinate of the provider's location"
+      - name: LON
+        description: "Longitude coordinate of the provider's location"
+      - name: ENCOUNTERS
+        description: "Number of encounters the provider has had"
+      - name: PROCEDURES
+        description: "Number of procedures the provider has performed"

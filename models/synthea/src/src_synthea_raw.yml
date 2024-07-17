@@ -1,0 +1,18 @@
+
+version: 2
+
+sources:
+  - name: raw
+    description: "Synthea Raw CSV data"
+    schema: synthea_raw
+    tables:
+      - name: allergies_raw
+        identifier: allergies
+        columns:
+          - name: id
+            description: Id
+            tests:
+              - unique
+              - not_null
+     
+

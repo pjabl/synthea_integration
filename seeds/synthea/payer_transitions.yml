@@ -1,0 +1,32 @@
+version: 2
+
+seeds:
+  - name: payer_transitions
+    config:
+      full_refresh: true
+      column_types:
+        PATIENT: text
+        MEMBERID: text
+        START_DATE: timestamp
+        END_DATE: timestamp
+        PAYER: text
+        SECONDARY_PAYER: text
+        PLAN_OWNERSHIP: text
+        OWNER_NAME: text
+    columns:
+      - name: PATIENT
+        description: "Patient ID"
+      - name: MEMBERID
+        description: "Member ID"
+      - name: START_DATE
+        description: "Start date of the payer transition"
+      - name: END_DATE
+        description: "End date of the payer transition"
+      - name: PAYER
+        description: "Primary payer ID"
+      - name: SECONDARY_PAYER
+        description: "Secondary payer ID"
+      - name: PLAN_OWNERSHIP
+        description: "Plan ownership type"
+      - name: OWNER_NAME
+        description: "Name of the plan owner"

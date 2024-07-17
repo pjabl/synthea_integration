@@ -1,0 +1,53 @@
+version: 2
+
+seeds:
+  - name: encounters
+    config:
+      full_refresh: true
+      column_types:
+        Id: text
+        START: timestamp
+        STOP: timestamp
+        PATIENT: text
+        ORGANIZATION: text
+        PROVIDER: text
+        PAYER: text
+        ENCOUNTERCLASS: text
+        CODE: bigint
+        DESCRIPTION: text
+        BASE_ENCOUNTER_COST: numeric
+        TOTAL_CLAIM_COST: numeric
+        PAYER_COVERAGE: numeric
+        REASONCODE: bigint
+        REASONDESCRIPTION: text
+    columns:
+      - name: Id
+        description: "Unique identifier for the encounter"
+      - name: START
+        description: "Start date and time of the encounter"
+      - name: STOP
+        description: "Stop date and time of the encounter"
+      - name: PATIENT
+        description: "Patient ID"
+      - name: ORGANIZATION
+        description: "Organization ID"
+      - name: PROVIDER
+        description: "Provider ID"
+      - name: PAYER
+        description: "Payer ID"
+      - name: ENCOUNTERCLASS
+        description: "Class of the encounter"
+      - name: CODE
+        description: "Encounter code"
+      - name: DESCRIPTION
+        description: "Description of the encounter"
+      - name: BASE_ENCOUNTER_COST
+        description: "Base cost of the encounter"
+      - name: TOTAL_CLAIM_COST
+        description: "Total claim cost"
+      - name: PAYER_COVERAGE
+        description: "Payer coverage amount"
+      - name: REASONCODE
+        description: "Reason code for the encounter"
+      - name: REASONDESCRIPTION
+        description: "Reason description for the encounter"

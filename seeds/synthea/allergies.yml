@@ -1,0 +1,53 @@
+version: 2
+
+seeds:
+  - name: allergies
+    config:
+      full_refresh: true
+      column_types:
+        START: date
+        STOP: date
+        PATIENT: text
+        ENCOUNTER: text
+        CODE: bigint
+        SYSTEM: text
+        DESCRIPTION: text
+        TYPE: text
+        CATEGORY: text
+        REACTION1: bigint
+        DESCRIPTION1: text
+        SEVERITY1: text
+        REACTION2: bigint
+        DESCRIPTION2: text
+        SEVERITY2: text
+    columns:
+      - name: START
+        description: "Start date of the allergy"
+      - name: STOP
+        description: "Stop date of the allergy"
+      - name: PATIENT
+        description: "Patient ID"
+      - name: ENCOUNTER
+        description: "Encounter ID"
+      - name: CODE
+        description: "Allergy code"
+      - name: SYSTEM
+        description: "System code"
+      - name: DESCRIPTION
+        description: "Description of the allergy"
+      - name: TYPE
+        description: "Type of the allergy"
+      - name: CATEGORY
+        description: "Category of the allergy"
+      - name: REACTION1
+        description: "First reaction code"
+      - name: DESCRIPTION1
+        description: "Description of the first reaction"
+      - name: SEVERITY1
+        description: "Severity of the first reaction"
+      - name: REACTION2
+        description: "Second reaction code"
+      - name: DESCRIPTION2
+        description: "Description of the second reaction"
+      - name: SEVERITY2
+        description: "Severity of the second reaction"

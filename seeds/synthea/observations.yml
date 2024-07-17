@@ -1,0 +1,35 @@
+version: 2
+
+seeds:
+  - name: observations
+    config:
+      full_refresh: true
+      column_types:
+        DATE: timestamp
+        PATIENT: text
+        ENCOUNTER: text
+        CATEGORY: text
+        CODE: text
+        DESCRIPTION: text
+        VALUE: text
+        UNITS: text
+        TYPE: text
+    columns:
+      - name: DATE
+        description: "Date and time of the observation"
+      - name: PATIENT
+        description: "Patient ID"
+      - name: ENCOUNTER
+        description: "Encounter ID"
+      - name: CATEGORY
+        description: "Category of the observation"
+      - name: CODE
+        description: "Observation code"
+      - name: DESCRIPTION
+        description: "Description of the observation"
+      - name: VALUE
+        description: "Value of the observation"
+      - name: UNITS
+        description: "Units of the observation value"
+      - name: TYPE
+        description: "Type of the observation"

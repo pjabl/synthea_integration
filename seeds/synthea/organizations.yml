@@ -1,0 +1,41 @@
+version: 2
+
+seeds:
+  - name: organizations
+    config:
+      full_refresh: true
+      column_types:
+        Id: text
+        NAME: text
+        ADDRESS: text
+        CITY: text
+        STATE: text
+        ZIP: text
+        LAT: float
+        LON: float
+        PHONE: text
+        REVENUE: numeric
+        UTILIZATION: integer
+    columns:
+      - name: Id
+        description: "Unique identifier for the organization"
+      - name: NAME
+        description: "Name of the organization"
+      - name: ADDRESS
+        description: "Address of the organization"
+      - name: CITY
+        description: "City where the organization is located"
+      - name: STATE
+        description: "State where the organization is located"
+      - name: ZIP
+        description: "ZIP code of the organization"
+      - name: LAT
+        description: "Latitude coordinate of the organization's location"
+      - name: LON
+        description: "Longitude coordinate of the organization's location"
+      - name: PHONE
+        description: "Phone number of the organization"
+      - name: REVENUE
+        description: "Revenue of the organization"
+      - name: UTILIZATION
+        description: "Utilization metric of the organization"

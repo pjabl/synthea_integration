@@ -1,0 +1,101 @@
+version: 2
+
+seeds:
+  - name: claims
+    config:
+      full_refresh: true
+      column_types:
+        Id: text
+        PATIENTID: text
+        PROVIDERID: text
+        PRIMARYPATIENTINSURANCEID: text
+        SECONDARYPATIENTINSURANCEID: text
+        DEPARTMENTID: bigint
+        PATIENTDEPARTMENTID: bigint
+        DIAGNOSIS1: bigint
+        DIAGNOSIS2: bigint
+        DIAGNOSIS3: bigint
+        DIAGNOSIS4: bigint
+        DIAGNOSIS5: bigint
+        DIAGNOSIS6: bigint
+        DIAGNOSIS7: bigint
+        DIAGNOSIS8: bigint
+        REFERRINGPROVIDERID: text
+        APPOINTMENTID: text
+        CURRENTILLNESSDATE: timestamp
+        SERVICEDATE: timestamp
+        SUPERVISINGPROVIDERID: text
+        STATUS1: text
+        STATUS2: text
+        STATUSP: text
+        OUTSTANDING1: float
+        OUTSTANDING2: float
+        OUTSTANDINGP: float
+        LASTBILLEDDATE1: timestamp
+        LASTBILLEDDATE2: timestamp
+        LASTBILLEDDATEP: timestamp
+        HEALTHCARECLAIMTYPEID1: bigint
+        HEALTHCARECLAIMTYPEID2: bigint
+    columns:
+      - name: Id
+        description: "Unique identifier for the claim"
+      - name: PATIENTID
+        description: "Patient ID"
+      - name: PROVIDERID
+        description: "Provider ID"
+      - name: PRIMARYPATIENTINSURANCEID
+        description: "Primary patient insurance ID"
+      - name: SECONDARYPATIENTINSURANCEID
+        description: "Secondary patient insurance ID"
+      - name: DEPARTMENTID
+        description: "Department ID"
+      - name: PATIENTDEPARTMENTID
+        description: "Patient department ID"
+      - name: DIAGNOSIS1
+        description: "Primary diagnosis code"
+      - name: DIAGNOSIS2
+        description: "Secondary diagnosis code"
+      - name: DIAGNOSIS3
+        description: "Tertiary diagnosis code"
+      - name: DIAGNOSIS4
+        description: "Quaternary diagnosis code"
+      - name: DIAGNOSIS5
+        description: "Quinary diagnosis code"
+      - name: DIAGNOSIS6
+        description: "Senary diagnosis code"
+      - name: DIAGNOSIS7
+        description: "Septenary diagnosis code"
+      - name: DIAGNOSIS8
+        description: "Octonary diagnosis code"
+      - name: REFERRINGPROVIDERID
+        description: "Referring provider ID"
+      - name: APPOINTMENTID
+        description: "Appointment ID"
+      - name: CURRENTILLNESSDATE
+        description: "Date of current illness"
+      - name: SERVICEDATE
+        description: "Date of service"
+      - name: SUPERVISINGPROVIDERID
+        description: "Supervising provider ID"
+      - name: STATUS1
+        description: "Primary status"
+      - name: STATUS2
+        description: "Secondary status"
+      - name: STATUSP
+        description: "Status P"
+      - name: OUTSTANDING1
+        description: "Outstanding amount 1"
+      - name: OUTSTANDING2
+        description: "Outstanding amount 2"
+      - name: OUTSTANDINGP
+        description: "Outstanding amount P"
+      - name: LASTBILLEDDATE1
+        description: "Last billed date 1"
+      - name: LASTBILLEDDATE2
+        description: "Last billed date 2"
+      - name: LASTBILLEDDATEP
+        description: "Last billed date P"
+      - name: HEALTHCARECLAIMTYPEID1
+        description: "Healthcare claim type ID 1"
+      - name: HEALTHCARECLAIMTYPEID2
+        description: "Healthcare claim type ID 2"

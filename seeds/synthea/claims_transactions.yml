@@ -1,0 +1,107 @@
+version: 2
+
+seeds:
+  - name: claims_transactions
+    config:
+      full_refresh: true
+      column_types:
+        ID: text
+        CLAIMID: text
+        CHARGEID: bigint
+        PATIENTID: text
+        TYPE: text
+        AMOUNT: numeric
+        METHOD: text
+        FROMDATE: timestamp
+        TODATE: timestamp
+        PLACEOFSERVICE: text
+        PROCEDURECODE: bigint
+        MODIFIER1: text
+        MODIFIER2: text
+        DIAGNOSISREF1: text
+        DIAGNOSISREF2: text
+        DIAGNOSISREF3: text
+        DIAGNOSISREF4: text
+        UNITS: bigint
+        DEPARTMENTID: bigint
+        NOTES: text
+        UNITAMOUNT: numeric
+        TRANSFEROUTID: text
+        TRANSFERTYPE: text
+        PAYMENTS: numeric
+        ADJUSTMENTS: numeric
+        TRANSFERS: numeric
+        OUTSTANDING: numeric
+        APPOINTMENTID: text
+        LINENOTE: text
+        PATIENTINSURANCEID: text
+        FEESCHEDULEID: bigint
+        PROVIDERID: text
+        SUPERVISINGPROVIDERID: text
+    columns:
+      - name: ID
+        description: "Unique identifier for the transaction"
+      - name: CLAIMID
+        description: "Claim ID"
+      - name: CHARGEID
+        description: "Charge ID"
+      - name: PATIENTID
+        description: "Patient ID"
+      - name: TYPE
+        description: "Type of transaction"
+      - name: AMOUNT
+        description: "Transaction amount"
+      - name: METHOD
+        description: "Payment method"
+      - name: FROMDATE
+        description: "Start date of the transaction period"
+      - name: TODATE
+        description: "End date of the transaction period"
+      - name: PLACEOFSERVICE
+        description: "Place of service"
+      - name: PROCEDURECODE
+        description: "Procedure code"
+      - name: MODIFIER1
+        description: "First modifier"
+      - name: MODIFIER2
+        description: "Second modifier"
+      - name: DIAGNOSISREF1
+        description: "First diagnosis reference"
+      - name: DIAGNOSISREF2
+        description: "Second diagnosis reference"
+      - name: DIAGNOSISREF3
+        description: "Third diagnosis reference"
+      - name: DIAGNOSISREF4
+        description: "Fourth diagnosis reference"
+      - name: UNITS
+        description: "Number of units"
+      - name: DEPARTMENTID
+        description: "Department ID"
+      - name: NOTES
+        description: "Notes"
+      - name: UNITAMOUNT
+        description: "Amount per unit"
+      - name: TRANSFEROUTID
+        description: "Transfer out ID"
+      - name: TRANSFERTYPE
+        description: "Transfer type"
+      - name: PAYMENTS
+        description: "Payments"
+      - name: ADJUSTMENTS
+        description: "Adjustments"
+      - name: TRANSFERS
+        description: "Transfers"
+      - name: OUTSTANDING
+        description: "Outstanding amount"
+      - name: APPOINTMENTID
+        description: "Appointment ID"
+      - name: LINENOTE
+        description: "Line note"
+      - name: PATIENTINSURANCEID
+        description: "Patient insurance ID"
+      - name: FEESCHEDULEID
+        description: "Fee schedule ID"
+      - name: PROVIDERID
+        description: "Provider ID"
+      - name: SUPERVISINGPROVIDERID
+        description: "Supervising provider ID"

@@ -1,0 +1,74 @@
+version: 2
+
+seeds:
+  - name: payers
+    config:
+      full_refresh: true
+      column_types:
+        Id: text
+        NAME: text
+        OWNERSHIP: text
+        ADDRESS: text
+        CITY: text
+        STATE_HEADQUARTERED: text
+        ZIP: text
+        PHONE: text
+        AMOUNT_COVERED: numeric
+        AMOUNT_UNCOVERED: numeric
+        REVENUE: numeric
+        COVERED_ENCOUNTERS: integer
+        UNCOVERED_ENCOUNTERS: integer
+        COVERED_MEDICATIONS: integer
+        UNCOVERED_MEDICATIONS: integer
+        COVERED_PROCEDURES: integer
+        UNCOVERED_PROCEDURES: integer
+        COVERED_IMMUNIZATIONS: integer
+        UNCOVERED_IMMUNIZATIONS: integer
+        UNIQUE_CUSTOMERS: integer
+        QOLS_AVG: float
+        MEMBER_MONTHS: integer
+    columns:
+      - name: Id
+        description: "Unique identifier for the payer"
+      - name: NAME
+        description: "Name of the payer"
+      - name: OWNERSHIP
+        description: "Ownership type of the payer"
+      - name: ADDRESS
+        description: "Address of the payer"
+      - name: CITY
+        description: "City where the payer is headquartered"
+      - name: STATE_HEADQUARTERED
+        description: "State where the payer is headquartered"
+      - name: ZIP
+        description: "ZIP code of the payer"
+      - name: PHONE
+        description: "Phone number of the payer"
+      - name: AMOUNT_COVERED
+        description: "Amount covered by the payer"
+      - name: AMOUNT_UNCOVERED
+        description: "Amount uncovered by the payer"
+      - name: REVENUE
+        description: "Revenue of the payer"
+      - name: COVERED_ENCOUNTERS
+        description: "Number of covered encounters"
+      - name: UNCOVERED_ENCOUNTERS
+        description: "Number of uncovered encounters"
+      - name: COVERED_MEDICATIONS
+        description: "Number of covered medications"
+      - name: UNCOVERED_MEDICATIONS
+        description: "Number of uncovered medications"
+      - name: COVERED_PROCEDURES
+        description: "Number of covered procedures"
+      - name: UNCOVERED_PROCEDURES
+        description: "Number of uncovered procedures"
+      - name: COVERED_IMMUNIZATIONS
+        description: "Number of covered immunizations"
+      - name: UNCOVERED_IMMUNIZATIONS
+        description: "Number of uncovered immunizations"
+      - name: UNIQUE_CUSTOMERS
+        description: "Number of unique customers"
+      - name: QOLS_AVG
+        description: "Average Quality of Life Score"
+      - name: MEMBER_MONTHS
+        description: "Number of member months"

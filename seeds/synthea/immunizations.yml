@@ -1,0 +1,26 @@
+version: 2
+
+seeds:
+  - name: immunizations
+    config:
+      full_refresh: true
+      column_types:
+        DATE: timestamp
+        PATIENT: text
+        ENCOUNTER: text
+        CODE: text
+        DESCRIPTION: text
+        BASE_COST: numeric
+    columns:
+      - name: DATE
+        description: "Date and time of the immunization"
+      - name: PATIENT
+        description: "Patient ID"
+      - name: ENCOUNTER
+        description: "Encounter ID"
+      - name: CODE
+        description: "Immunization code"
+      - name: DESCRIPTION
+        description: "Description of the immunization"
+      - name: BASE_COST
+        description: "Base cost of the immunization"

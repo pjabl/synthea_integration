@@ -1,0 +1,92 @@
+version: 2
+
+seeds:
+  - name: patients
+    config:
+      full_refresh: true
+      column_types:
+        Id: text
+        BIRTHDATE: date
+        DEATHDATE: date
+        SSN: text
+        DRIVERS: text
+        PASSPORT: text
+        PREFIX: text
+        FIRST: text
+        MIDDLE: text
+        LAST: text
+        SUFFIX: text
+        MAIDEN: text
+        MARITAL: text
+        RACE: text
+        ETHNICITY: text
+        GENDER: text
+        BIRTHPLACE: text
+        ADDRESS: text
+        CITY: text
+        STATE: text
+        COUNTY: text
+        FIPS: text
+        ZIP: text
+        LAT: float
+        LON: float
+        HEALTHCARE_EXPENSES: numeric
+        HEALTHCARE_COVERAGE: numeric
+        INCOME: numeric
+    columns:
+      - name: Id
+        description: "Unique identifier for the patient"
+      - name: BIRTHDATE
+        description: "Birthdate of the patient"
+      - name: DEATHDATE
+        description: "Death date of the patient"
+      - name: SSN
+        description: "Social Security Number of the patient"
+      - name: DRIVERS
+        description: "Driver's license number of the patient"
+      - name: PASSPORT
+        description: "Passport number of the patient"
+      - name: PREFIX
+        description: "Prefix of the patient's name"
+      - name: FIRST
+        description: "First name of the patient"
+      - name: MIDDLE
+        description: "Middle name of the patient"
+      - name: LAST
+        description: "Last name of the patient"
+      - name: SUFFIX
+        description: "Suffix of the patient's name"
+      - name: MAIDEN
+        description: "Maiden name of the patient"
+      - name: MARITAL
+        description: "Marital status of the patient"
+      - name: RACE
+        description: "Race of the patient"
+      - name: ETHNICITY
+        description: "Ethnicity of the patient"
+      - name: GENDER
+        description: "Gender of the patient"
+      - name: BIRTHPLACE
+        description: "Birthplace of the patient"
+      - name: ADDRESS
+        description: "Address of the patient"
+      - name: CITY
+        description: "City where the patient resides"
+      - name: STATE
+        description: "State where the patient resides"
+      - name: COUNTY
+        description: "County where the patient resides"
+      - name: FIPS
+        description: "FIPS code of the county where the patient resides"
+      - name: ZIP
+        description: "ZIP code of the patient"
+      - name: LAT
+        description: "Latitude coordinate of the patient's location"
+      - name: LON
+        description: "Longitude coordinate of the patient's location"
+      - name: HEALTHCARE_EXPENSES
+        description: "Healthcare expenses of the patient"
+      - name: HEALTHCARE_COVERAGE
+        description: "Healthcare coverage amount for the patient"
+      - name: INCOME
+        description: "Income of the patient"

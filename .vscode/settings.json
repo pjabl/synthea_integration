@@ -1,0 +1,24 @@
+{
+  // "python.defaultInterpreterPath": ".\\.venv\\Scripts\\python.exe",
+  
+  "files.associations": {
+    "*.sql": "jinja-sql",
+    "*.yml": "jinja-yaml"
+  },
+  // the vscode-dbt docs say you may need this
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "sqlfluff.config": ".\\.sqlfluff",
+  "sqlfluff.dialect": "bigquery",
+  "sqlfluff.executablePath": ".\\.venv\\Scripts\\sqlfluff.exe",
+  "sqlfluff.format.enabled": true,
+  "sqlfluff.linter.run": "onSave",
+  "sqlfluff.experimental.format.executeInTerminal": true,
+  "editor.formatOnSave": false,
+  "sqlfluff.excludeRules": ["L057", "TMP"],
+  "editor.fontSize": 16,
+  "dbt.queryLimit": 500,
+  "dbt.enableNewQueryPanel": true,
+  "dbt.enableNewLineagePanel": false
+}

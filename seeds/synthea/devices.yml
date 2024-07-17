@@ -1,0 +1,29 @@
+version: 2
+
+seeds:
+  - name: devices
+    config:
+      full_refresh: true
+      column_types:
+        START: timestamp
+        STOP: timestamp
+        PATIENT: text
+        ENCOUNTER: text
+        CODE: bigint
+        DESCRIPTION: text
+        UDI: text
+    columns:
+      - name: START
+        description: "Start date and time of the device usage"
+      - name: STOP
+        description: "Stop date and time of the device usage"
+      - name: PATIENT
+        description: "Patient ID"
+      - name: ENCOUNTER
+        description: "Encounter ID"
+      - name: CODE
+        description: "Device code"
+      - name: DESCRIPTION
+        description: "Description of the device"
+      - name: UDI
+        description: "Unique Device Identifier"
