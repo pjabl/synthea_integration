@@ -4,7 +4,7 @@ version: 2
 sources:
   - name: raw
     description: "Synthea Raw CSV data"
-    schema: synthea_raw
+    schema: patients_data
     tables:
       - name: allergies_raw
         identifier: allergies

@@ -5,4 +5,5 @@ logs/
 .idea
 python/output.yaml
 edr_target/
-python/simulate/__pycache__/
+__pycache__/
+profiles.yml

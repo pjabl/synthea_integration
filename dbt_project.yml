@@ -41,4 +41,4 @@ models:
       +materialized: table
       +schema: synthea
 seeds:
-  +schema: synthea_raw
+  +schema: patients_data
